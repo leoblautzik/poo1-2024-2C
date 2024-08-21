@@ -13,6 +13,7 @@ mayor = a
 if b > a:
     medio = a
     mayor = b
+
 else:
     medio = b
 
@@ -20,9 +21,11 @@ if c > mayor:
     menor = medio
     medio = mayor
     mayor = c
+
 elif c > medio:
     menor = medio
     medio = c
+
 else:
     menor = c
 
