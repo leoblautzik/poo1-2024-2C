@@ -19,6 +19,7 @@ public class Ejercicio06 {
         int b = sc.nextInt();
         System.out.println("Ingrese un valor entero mas: ");
         int c = sc.nextInt();
+        sc.close();
 
         mayor = a;
         if (b > a) {
