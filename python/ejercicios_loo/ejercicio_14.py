@@ -4,9 +4,9 @@ números primos siendo n un valor que debe ingresar el usuario.
 
 
 def es_primo(a):
-    """devuelve true o false si n en primo o no"""
+    """devuelve true o false si a en primo o no"""
     i = 2
-    while (a > i and i < a and a % i != 0):
+    while (a > i and i <= a and a % i != 0):
         i += 1
     return a == i
 

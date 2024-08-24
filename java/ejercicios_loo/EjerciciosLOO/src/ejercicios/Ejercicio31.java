@@ -1,4 +1,4 @@
-package ejercicios;
+
 
 /**
  * Escribir una función que reciba un arreglo de enteros y
