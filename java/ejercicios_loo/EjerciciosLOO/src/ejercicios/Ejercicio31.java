@@ -1,5 +1,4 @@
 
-
 /**
  * Escribir una función que reciba un arreglo de enteros y
  * devuelva la suma de los elementos que se encuentran en posiciones pares
@@ -18,6 +17,15 @@ public class Ejercicio31 {
 
         elementosEnPosPares(a);
         elementosEnPosImpares(b);
+        System.out.println(sumaDeElementosEnPosPares(a));
+    }
+
+    static int sumaDeElementosEnPosPares(int[] a) {
+        int suma = 0;
+        for (int i = 0; i < a.length; i += 2) {
+            suma += a[i];
+        }
+        return suma;
     }
 
     static void elementosEnPosPares(int[] enteros) {

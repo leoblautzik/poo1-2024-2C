@@ -44,8 +44,12 @@ public class Ejercicio30 {
         System.out.println(estaOrdenadoDeMayorAmenor(repe));
         System.out.println(estaOrdenadoDeMenorAmayor(repe));
 
-        for (int i = 0; i < repe.length; i++) {
-            System.out.println(repe[i]);
+        for (int i = 0; i < a.length; i++) {
+            System.out.println(a[i]);
+        }
+
+        for (Integer cadaUno : a) {
+            System.out.println(cadaUno);
         }
 
     }
