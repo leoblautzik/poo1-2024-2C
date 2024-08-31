@@ -39,7 +39,7 @@ a2 = [-10, 0, 7]
 # resultado = [-10, -5, 0, 0, 0, 1, 5, 7]
 print(mezcla(a1, a2))
 
-a3 = []
+a3 = [int]
 a4 = [1]
 print(mezcla(a3, a4))
 print(mezcla(a4, a3))
