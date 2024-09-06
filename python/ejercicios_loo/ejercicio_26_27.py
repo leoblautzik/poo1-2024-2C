@@ -66,8 +66,7 @@ s = "Hola"
 print(s)
 print(invertir(s))
 
-p = "neuquen"
-print(es_palindromo(p))
+print(es_palindromo("neuquen"))
 print(es_palindromo("a"))
 print(es_palindromo(""))
 print(es_palindromo("      A mi loca  Colima    "))

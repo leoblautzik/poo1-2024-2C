@@ -73,10 +73,10 @@ class Punto:
         return self.get_x() == other.get_x() and self.get_y() == other.get_y()
 
 
-p1 = Punto(4, 6)
-p2 = Punto(4, 6)
-p1.mostrar_punto()
-p2.mostrar_punto()
-print(p1)
-print(p2)
-print(p1 == p2)
+# p1 = Punto(4, 6)
+# p2 = Punto(4, 6)
+# p1.mostrar_punto()
+# p2.mostrar_punto()
+# print(p1)
+# print(p2)
+# print(p1 == p2)

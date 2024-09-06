@@ -1,6 +1,6 @@
 """Class Corona Circular"""
 
-import circulo
+from src import circulo
 
 
 class CooronaCircular:
