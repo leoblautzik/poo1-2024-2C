@@ -5,7 +5,8 @@ entre 0 y 100
 """
 
 
-def frecuencias(a):
+def frecuencias(a) -> str:
+    s = ""
     f = []
     for i in range(101):
         f.append(0)
@@ -13,9 +14,11 @@ def frecuencias(a):
     for value in a:
         f[value] += 1
 
-    for i in range(len(f)):
-        if (f[i] != 0):
-            print(i, f[i])
+    for i in range(101):
+        if f[i] != 0:
+            s = s + str(i) + ":\t" + str(f[i]) + "\n"
+
+    return s
 
 
 def swap(a, b):
@@ -25,11 +28,9 @@ def swap(a, b):
 
 
 # main
-a = [23, 23, 0, 1, 1, 1, 1, 45, 7, 7, 8, 1,
-     1, 89, 9, 9, 9, 9, 9, 9, 9, 100
-     ]
-print(a)
-frecuencias(a)
+v = [23, 23, 0, 1, 1, 1, 1, 45, 7, 7, 8, 1, 1, 89, 9, 9, 9, 9, 9, 9, 9, 100]
+print(v)
+print(frecuencias(v))
 x = 5
 y = 10
 print("x = ", x)

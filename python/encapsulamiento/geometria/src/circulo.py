@@ -1,13 +1,13 @@
 """Class Circulo"""
 
 import math
-import punto
+from src import punto
 
 
 class Circulo:
     """Modela un circulo a partir de su radio y su centro"""
 
-    def __init__(self, radio, x_centro, y_centro):
+    def __init__(self, radio: float = 1, x_centro: float = 0.0, y_centro: float = 0.0):
         if radio <= 0:
             raise ValueError("El radio debe ser positivo")
         self.__diametro = radio * 2
@@ -27,10 +27,13 @@ class Circulo:
 
     def get_diametro(self):
         """Devuelve el diametro del circulo"""
+
         return self.__diametro
 
     def set_diametro(self, d):
         """Establece el diametro en el valor d pasado como parametro"""
+        if d <= 0:
+            raise ValueError("El radio debe ser positivo")
         self.__diametro = d
 
     def get_perimetro(self):
