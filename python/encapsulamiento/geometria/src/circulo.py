@@ -11,6 +11,8 @@ class Circulo:
         if radio <= 0:
             raise ValueError("El radio debe ser positivo")
         self.__diametro = radio * 2
+        # self.__xcentro = x_centro
+        # self.__y_centro = y_centro
         self.__centro = punto.Punto(x_centro, y_centro)
 
     def get_centro(self):
@@ -52,3 +54,7 @@ class Circulo:
     def set_area(self, a):
         """Establece el area en el valor a"""
         self.set_radio(math.sqrt(a / math.pi))
+
+    def desplazar(self, en_x, en_y):
+        """Desplaza el circulo"""
+        self.__centro.desplazar(en_x, en_y)

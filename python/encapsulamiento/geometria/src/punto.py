@@ -44,7 +44,7 @@ class Punto:
         """Devuelve la distancia desde el punto al origen de coordenadas"""
         return math.sqrt(pow(self.__x, 2) + pow(self.__y, 2))
 
-    def distancia_entre_dos_puntos(self, otro) -> float:
+    def distancia(self, otro) -> float:
         """Devuelve la distacia entre self y otro punto que se pasa por parametro"""
         return math.sqrt(
             pow(self.__x - otro.get_x(), 2) + pow(self.__y - otro.get_y(), 2)
@@ -58,7 +58,7 @@ class Punto:
         """Desplaza el punto en la direccion de y lo que indique el parametro d_en_y"""
         self.__y = self.__y + d_en_y
 
-    def desplazar_en_ambas_direcciones(self, d_en_x, d_en_y):
+    def desplazar(self, d_en_x, d_en_y):
         """Desplaza el punto en la direccion de x lo que indique el parametro d_en_x
         y desplaza el punto en la direccion de y lo que indique el parametro d_en_y"""
         self.desplazar_en_x(d_en_x)
