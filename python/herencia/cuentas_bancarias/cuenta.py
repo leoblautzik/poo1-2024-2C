@@ -45,12 +45,6 @@ class Cuenta(ABC):
         """Establece el saldo en s"""
         self.__saldo = s
 
-    # @abstractmethod
-    # def extraer(self, monto):
-    #     """de todas las cuentas se debe poder extraer dinero,
-    #     si hay dinero suficiente. No tiene el mismo comportamiento
-    #     para cuentas de ahorro que para cuentas corrientes"""
-
     @abstractmethod
     def hay_dinero_suficiente(self, monto) -> bool:
         """Devuelve true o false, segun alcance el saldo para

@@ -1,9 +1,9 @@
 """Class Cuenta Corriente"""
 
-from cuentas_bancarias import cuenta as c
+from cuentas_bancarias.cuenta import Cuenta
 
 
-class CuentaCorriente(c.Cuenta):
+class CuentaCorriente(Cuenta):
     """Class Cuenta Corriente
     Las cuentas corrientes pueden girar en descubierto hasta  un monto
     que se define al momento de su creación.

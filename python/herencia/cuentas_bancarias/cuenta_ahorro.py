@@ -1,9 +1,9 @@
 """Class Caja de Ahorro"""
 
-from cuentas_bancarias import cuenta as c
+from cuentas_bancarias.cuenta import Cuenta
 
 
-class CajaDeAhorro(c.Cuenta):
+class CajaDeAhorro(Cuenta):
     """Class Caja de Ahorro: Las cuentas de ahorro no pueden tener números rojos.
     Ademas del saldo, tienen una reserva donde el titular reserva dinero.
     Ese pozo de reserva no se informa como parte del saldo disponible,
@@ -45,13 +45,3 @@ class CajaDeAhorro(c.Cuenta):
 
     def __str__(self) -> str:
         return super().__str__() + ", Reserva: " + str(self.__reserva)
-
-
-if __name__ == "__main__":
-    ca = CajaDeAhorro(12345678)
-    print(ca)
-    ca.depositar(1000)
-    ca.reservar(500)
-    print(ca.get_reserva())
-    print(ca)
-    print(ca.get_dinero_disponible())

@@ -7,8 +7,8 @@ listarCuentas() -> que muestra los datos de todas las cuentas del banco,
 ordenado por saldo de manera ascendente.
 """
 
-from cuentas_bancarias import cuenta_ahorro as ca
-from cuentas_bancarias import cuenta_corriente as cc
+from cuentas_bancarias.cuenta_ahorro import CajaDeAhorro
+from cuentas_bancarias.cuenta_corriente import CuentaCorriente
 
 
 class Banco:
@@ -17,13 +17,13 @@ class Banco:
     def __init__(self) -> None:
         self.__cuentas = []
 
-    def abrir_caja_ahorro(self, dni) -> ca.CajaDeAhorro:
+    def abrir_caja_ahorro(self, dni) -> CajaDeAhorro:
         """Crea una caja de ahorro y la agrega a la lista de cuentas"""
-        return ca.CajaDeAhorro(dni)
+        return CajaDeAhorro(dni)
 
-    def abrir_cuenta_corriente(self, dni, descubierto) -> cc.CuentaCorriente:
+    def abrir_cuenta_corriente(self, dni, descubierto) -> CuentaCorriente:
         """Crea una cuenta corriente y la agrega a la lista de cuentas"""
-        return cc.CuentaCorriente(dni, descubierto)
+        return CuentaCorriente(dni, descubierto)
 
     def agregar_cuenta(self, c):
         """Agrega la cuenta c a la lista de cuentas del banco"""
@@ -38,7 +38,7 @@ class Banco:
         """Muestra por pantalla la lista de cuentas corrientes que estan
         en descubierto"""
         for c in self.__cuentas:
-            if isinstance(c, cc.CuentaCorriente):
+            if isinstance(c, CuentaCorriente):
                 if c.get_saldo() < 0:
                     print(c)
 
