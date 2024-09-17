@@ -7,8 +7,8 @@ listarCuentas() -> que muestra los datos de todas las cuentas del banco,
 ordenado por saldo de manera ascendente.
 """
 
-from cuentas_bancarias.cuenta_ahorro import CajaDeAhorro
-from cuentas_bancarias.cuenta_corriente import CuentaCorriente
+from cuentas.cuenta_ahorro import CajaDeAhorro
+from cuentas.cuenta_corriente import CuentaCorriente
 
 
 class Banco:

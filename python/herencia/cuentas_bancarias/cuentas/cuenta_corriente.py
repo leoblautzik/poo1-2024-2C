@@ -1,6 +1,6 @@
 """Class Cuenta Corriente"""
 
-from cuentas_bancarias.cuenta import Cuenta
+from cuentas.cuenta import Cuenta
 
 
 class CuentaCorriente(Cuenta):

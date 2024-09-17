@@ -1,6 +1,6 @@
 """Class Caja de Ahorro"""
 
-from cuentas_bancarias.cuenta import Cuenta
+from cuentas.cuenta import Cuenta
 
 
 class CajaDeAhorro(Cuenta):
