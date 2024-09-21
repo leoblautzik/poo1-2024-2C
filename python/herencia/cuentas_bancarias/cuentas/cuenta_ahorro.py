@@ -14,11 +14,6 @@ class CajaDeAhorro(Cuenta):
         super().__init__(dni)
         self.__reserva = 0.00
 
-    def extraer(self, monto):
-        if not self.hay_dinero_suficiente(monto):
-            raise ValueError("Saldo insuficiente")
-        super().set_saldo(super().get_saldo - monto)
-
     def hay_dinero_suficiente(self, monto) -> bool:
         """Devuelve true o false, segun alcance el saldo para
         hacer la operacion"""

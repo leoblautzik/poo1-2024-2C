@@ -32,7 +32,7 @@ class Cuenta(ABC):
         self.__dni = dni
 
     def get_titular(self):
-        """revuelve el dni del titular de la cuenta"""
+        """devuelve el dni del titular de la cuenta"""
 
         return self.__dni
 
