@@ -28,7 +28,7 @@ public abstract class Deportista {
         return this.diasPorSemanaDeEntreno;
     }
 
-    public void hacerVitalicio() {
+    void hacerVitalicio() {
         this.esVitalicio = true;
     }
 

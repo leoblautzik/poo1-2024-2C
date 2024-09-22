@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class Club {
 
-    private static int numeroDeSocio = 100;
+    private int numeroDeSocio = 100;
     private static double cuotaBase;
 
     private ArrayList<Deportista> socios;
@@ -22,17 +22,21 @@ public class Club {
         this.socios.add(s);
     }
 
-    public static int getProximoNumerDeSocio() {
-        Club.numeroDeSocio++;
-        return Club.numeroDeSocio;
+    public int getProximoNumerDeSocio() {
+        this.numeroDeSocio++;
+        return this.numeroDeSocio;
+    }
+
+    public void hacerVitalicio(Deportista d) {
+        d.hacerVitalicio();
     }
 
     public static void main(String[] args) {
         Club elProgreso = new Club();
 
-        Tenista rafa = new Tenista(Club.getProximoNumerDeSocio(), 4);
+        Tenista rafa = new Tenista(elProgreso.getProximoNumerDeSocio(), 4);
 
-        rafa.hacerVitalicio();
+        elProgreso.hacerVitalicio(rafa);
 
         System.out.println(rafa);
 
