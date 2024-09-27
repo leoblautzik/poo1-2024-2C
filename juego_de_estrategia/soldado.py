@@ -22,7 +22,8 @@ class Soldado(Unidad, Hidratable):
             self.infligir_danio(oponente)
 
     def puede_atacar(self, oponente: Unidad) -> bool:
-        """Comentario"""
+        """Devuelve true o false si self cumple con
+        las condiciones para poder atacar"""
         return (
             not oponente.esta_muerto()
             and not self.esta_muerto()

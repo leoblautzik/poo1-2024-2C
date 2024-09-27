@@ -5,6 +5,7 @@ from soldado import Soldado
 
 
 class Pruebas(unittest.TestCase):
+    """Pruebas unitarias class Soldado"""
 
     # Soldado
     def test_puede_atacar(self):

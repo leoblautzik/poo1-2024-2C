@@ -55,3 +55,7 @@ class Unidad(metaclass=ABCMeta):
     def sufrir_danio(self, oponente) -> None:
         """self recibe el danio inflingido por el oponente"""
         self.set_salud(self.get_salud() - oponente.get_danio())
+
+    def desplazarse(self, nueva_posicion):
+        """la unidad se desplaza a la nueva posicion"""
+        self.__posicion = nueva_posicion
