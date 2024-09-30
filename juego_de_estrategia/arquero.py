@@ -33,7 +33,5 @@ class Arquero(Unidad):
         )
 
     def atacar(self, oponente: Unidad):
-        if self.puede_atacar(oponente):
-            self.__flechas -= 1
-            # oponente.sufrir_danio(self)
-            self.infligir_danio(oponente)
+        super().atacar(oponente)
+        self.__flechas -= 1

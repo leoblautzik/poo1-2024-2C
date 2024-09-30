@@ -12,9 +12,8 @@ class Caballero(Unidad):
         self.__caballo = Caballo()
 
     def atacar(self, oponente) -> None:
-        if self.puede_atacar(oponente):
-            self.__caballo.incrementar_ataques()
-            self.infligir_danio(oponente)
+        super().atacar(oponente)
+        self.__caballo.incrementar_ataques()
 
     def puede_atacar(self, oponente: Unidad) -> bool:
 

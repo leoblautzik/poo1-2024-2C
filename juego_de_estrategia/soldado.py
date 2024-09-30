@@ -16,14 +16,11 @@ class Soldado(Unidad, Hidratable):
         return self.__energia
 
     def atacar(self, oponente: Unidad):
-        if self.puede_atacar(oponente):
-            self.__energia -= 10
-            # oponente.sufrir_danio(self)
-            self.infligir_danio(oponente)
+        super().atacar(oponente)
+        self.__energia -= 10
 
     def puede_atacar(self, oponente: Unidad) -> bool:
-        """Devuelve true o false si self cumple con
-        las condiciones para poder atacar"""
+        """Comentario"""
         return (
             not oponente.esta_muerto()
             and not self.esta_muerto()

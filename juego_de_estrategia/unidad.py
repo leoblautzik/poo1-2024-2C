@@ -11,9 +11,13 @@ class Unidad(metaclass=ABCMeta):
         self.__danio = danio
         self.__salud = salud
 
-    @abstractmethod
+    # @abstractmethod
+    # def atacar(self, oponente) -> None:
+    #     """self ataca al oponente"""
+
     def atacar(self, oponente) -> None:
-        """self ataca al oponente"""
+        if self.puede_atacar(oponente):
+            self.infligir_danio(oponente)
 
     @abstractmethod
     def puede_atacar(self, oponente) -> bool:

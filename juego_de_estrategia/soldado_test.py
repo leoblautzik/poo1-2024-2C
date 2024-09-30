@@ -2,10 +2,10 @@
 
 import unittest
 from soldado import Soldado
+from lancero import Lancero
 
 
 class Pruebas(unittest.TestCase):
-    """Pruebas unitarias class Soldado"""
 
     # Soldado
     def test_puede_atacar(self):
@@ -71,6 +71,14 @@ class Pruebas(unittest.TestCase):
         s2 = Soldado(10)
         print(s1)
         print(s2)
+
+    def test_lancero_ataca_soldado(self):
+        """Los soldados estan a 1 de distancia(cuerpo a cuerpo)
+        y por lo tanto se pueden atacar"""
+        l1 = Lancero(1)
+        s2 = Soldado(2)
+        self.assertTrue(l1.puede_atacar(s2))
+        self.assertTrue(s2.puede_atacar(l1))
 
 
 if __name__ == "__main__":
