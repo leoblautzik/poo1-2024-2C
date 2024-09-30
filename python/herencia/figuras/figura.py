@@ -4,18 +4,14 @@ from abc import ABCMeta
 
 
 class Figura(metaclass=ABCMeta):
+    """Clase abstracta Figura"""
 
-    def __init__(self, area):
+    def __init__(self, area: float):
         self.__area = area
 
-    def get_area(self):
+    def get_area(self) -> float:
+        """Devuelve el area de la figura"""
         return self.__area
-
-    # __lt__ less than <
-    #
-    # __gt__ greater than >
-    #
-    # __eq__ equal to ==
 
     def __eq__(self, other) -> bool:
         return self.get_area() == other.get_area()
@@ -31,3 +27,6 @@ class Figura(metaclass=ABCMeta):
 
     def __ge__(self, other) -> bool:
         return self.get_area() >= other.get_area()
+
+    def __str__(self) -> str:
+        return type(self).__name__ + ", Area: " + str(self.get_area())
