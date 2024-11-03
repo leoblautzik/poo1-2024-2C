@@ -1,0 +1,4 @@
+Hola
+Mundo
+Ejemplo de lectura de un archivo de texto
+Nombre: "archivo.txt"

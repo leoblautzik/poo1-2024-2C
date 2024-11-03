@@ -7,6 +7,29 @@ mientras que [(]) debe devolver false.
 """
 
 
+class Pila:
+    """Clase Pila implementada sobre una lista"""
+
+    def __init__(self):
+        self.__pila = []
+
+    def is_empty(self) -> bool:
+        """Devuelve True si la pila está vacía"""
+        return len(self.__pila) == 0
+
+    def pop(self):
+        """Devuelve el elemento en el tope de la pila y lo remueve"""
+        return self.__pila.pop()
+
+    def push(self, dato):
+        """Agrega un elemento en al tope de la pila"""
+        self.__pila.append(dato)
+
+    def peek(self):
+        """Devuelve el elemento en el tope de la pila pero no lo remueve"""
+        return self.__pila[len(self.__pila) - 1]
+
+
 class ExpresionBalanceada:
     """Para resolver la consigna se utiliza una pila para apilar los simbolos de abrir.
     Si el simbolo que se lee es de cerrar, se desapila y se compueba que  concuerde con el leido,
@@ -28,10 +51,10 @@ class ExpresionBalanceada:
         self.__parejita = {"]": "[", ")": "(", "}": "{"}
 
         # una pila para apilar los simbolos de abrir
-        self.__pila = []
+        self.__pila = Pila()
 
-    def __pila_vacia(self) -> bool:
-        return len(self.__pila) == 0
+    # def __pila_vacia(self) -> bool:
+    #     return self.__pila.is_empty()
 
     def esta_balanceada(self, exp) -> bool:
         """Evalúá si la expresion esta bien balanceada
@@ -41,11 +64,14 @@ class ExpresionBalanceada:
         for simbolo in exp:
 
             if simbolo in self.__de_abrir:
-                self.__pila.append(simbolo)
+                self.__pila.push(simbolo)
             elif simbolo in self.__de_cerrar:
-                if self.__pila_vacia() or self.__parejita[simbolo] != self.__pila.pop():
+                if (
+                    self.__pila.is_empty()
+                    or self.__parejita[simbolo] != self.__pila.pop()
+                ):
                     return False
             else:
                 raise ValueError("Simbolo incorrecto")
 
-        return self.__pila_vacia()
+        return self.__pila.is_empty()

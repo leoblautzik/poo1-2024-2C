@@ -1,0 +1,101 @@
+
+Buenos Aires
+30513994,Menichetti,24,Buenos Aires
+29477936,Allegretti,40,Buenos Aires
+32631539,Gomez,27,Buenos Aires
+32236740,Benitez,37,Buenos Aires
+38380227,Toloza,36,Buenos Aires
+34098790,Baravalle,20,Buenos Aires
+32980931,Benini,37,Buenos Aires
+38200327,Caruso,25,Buenos Aires
+36714588,Albarracín,25,Buenos Aires
+
+Ciudad Autónoma de Buenos Aires
+36087949,Villca,26,Ciudad Autónoma de Buenos Aires
+32605380,Santelli,25,Ciudad Autónoma de Buenos Aires
+38028213,Santi,27,Ciudad Autónoma de Buenos Aires
+36178904,Coronado,32,Ciudad Autónoma de Buenos Aires
+27302142,Cela,30,Ciudad Autónoma de Buenos Aires
+35368160,Perazzo,23,Ciudad Autónoma de Buenos Aires
+
+Catamarca
+26816082,Grau,36,Catamarca
+
+Chaco
+37864860,Guido,32,Chaco
+
+Chubut
+33116287,Ayvar,34,Chubut
+
+Córdoba
+37753908,Canteros,40,Córdoba
+34375738,Rodeiro,34,Córdoba
+33423119,Bellana,23,Córdoba
+
+Corrientes
+33907663,Occhi,25,Corrientes
+38031617,Gonzalez,26,Corrientes
+37649546,Crosta,29,Corrientes
+
+Entre Ríos
+37113832,Gonzalez,37,Entre Ríos
+35951783,PinEtchave,27,Entre Ríos
+31604852,Frigerio,38,Entre Ríos
+
+Formosa
+29130380,Jovanovich,35,Formosa
+37864636,Elizagoyen,37,Formosa
+37754713,Ledesma,24,Formosa
+
+Jujuy
+37792163,Esposito,26,Jujuy
+33786091,Chicchi,26,Jujuy
+36900375,Accerboni,30,Jujuy
+
+La Pampa
+28408106,Vera,21,La Pampa
+41450508,Correa,27,La Pampa
+
+La Rioja
+31464233,TurkoSoto,23,La Rioja
+36166857,Gobbi,30,La Rioja
+
+Mendoza
+32616493,Alonso,26,Mendoza
+26942727,Aranda,25,Mendoza
+
+Misiones
+38142213,Moreno,21,Misiones
+32760802,Ali,39,Misiones
+
+Neuquén
+13554552,Iseñ,32,Neuquén
+38010118,Iglesias,39,Neuquén
+
+Río Negro
+18861210,Bravo,32,Río Negro
+37605721,Vinci,38,Río Negro
+
+Salta
+35532465,PerezAledda,25,Salta
+37273740,Ubillos,29,Salta
+
+San Juan
+34412028,Ocampo,21,San Juan
+32757425,Martin,36,San Juan
+
+San Luis
+32790866,Castillo,38,San Luis
+
+Santa Cruz
+30603450,Veljacic,38,Santa Cruz
+
+Santa Fe
+37542331,Amato,34,Santa Fe
+
+Santiago del Estero
+35204681,Gualco,28,Santiago del Estero
+32419830,Avendaño,30,Santiago del Estero
+
+Tucumán
+35974947,Francischini,22,Tucumán

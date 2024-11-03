@@ -4,7 +4,7 @@ import unittest
 from expresion_balanceada import ExpresionBalanceada
 
 
-class ExpresionBalanceadaTest(unittest.TestCase):
+class TestExpresionBalanceada(unittest.TestCase):
     """Casos de prueba expresion balanceada"""
 
     def test_01(self):
