@@ -1,6 +1,6 @@
 30513994,Menichetti,24,Buenos Aires
 36087949,Villca,26,Ciudad Autónoma de Buenos Aires
-26816082,Grau,36,Catamarca
+26816082,Grau,cero,Catamarca
 37864860,Guido,32,Chaco
 33116287,Ayvar,34,Chubut
 37753908,Canteros,40,Córdoba
@@ -9,6 +9,8 @@
 29130380,Jovanovich,35,Formosa
 37792163,Esposito,26,Jujuy
 28408106,Vera,21,La Pampa
+28408106,Vera,31,La Pampa
+28408106,Vera,31,La Rioja
 31464233,TurkoSoto,23,La Rioja
 32616493,Alonso,26,Mendoza
 38142213,Moreno,21,Misiones

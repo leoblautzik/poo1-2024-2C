@@ -21,6 +21,15 @@ class Persona:
             + self.__provincia
         )
 
+    def get_apellido(self):
+        return self.__apellido
+
+    def __lt__(self, other):
+        return self.__apellido < other.get_apellido()
+
+    def __gt__(self, other):
+        return self.__apellido > other.get_apellido()
+
     def get_edad(self) -> int:
         """Devuelve un entero que es la edad de la persona"""
         return self.__edad
