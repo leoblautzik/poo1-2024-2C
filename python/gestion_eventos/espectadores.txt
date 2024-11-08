@@ -1,0 +1,9 @@
+Potrerito vs. Jubilados
+CTE:3064
+Puerta 1: 107, Puerta 2: 451, Puerta 3: 486, Puerta 4: 0, Puerta 5: 24, Puerta 6: 53, Puerta 7: 3, Puerta 8: 423, Puerta 9: 346, Puerta 10: 165, Puerta 11: 135, Puerta 12: 487, Puerta 13: 146, Puerta 14: 238, Puerta 15: 0
+Barracas vs. Sacachispas
+CTE:3334
+Puerta 1: 407, Puerta 2: 0, Puerta 3: 399, Puerta 4: 463, Puerta 5: 201, Puerta 6: 107, Puerta 7: 275, Puerta 8: 400, Puerta 9: 112, Puerta 10: 157, Puerta 11: 307, Puerta 12: 181, Puerta 13: 282, Puerta 14: 43, Puerta 15: 0
+Desamparados vs. Dalmine
+CTE:2646
+Puerta 1: 45, Puerta 2: 37, Puerta 3: 115, Puerta 4: 196, Puerta 5: 80, Puerta 6: 130, Puerta 7: 68, Puerta 8: 198, Puerta 9: 0, Puerta 10: 0, Puerta 11: 395, Puerta 12: 241, Puerta 13: 187, Puerta 14: 472, Puerta 15: 482
