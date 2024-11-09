@@ -2,8 +2,11 @@ package bibliotecaConLista;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Map;
+import java.util.TreeMap;
 
 public class Biblioteca {
 
@@ -90,6 +93,69 @@ public class Biblioteca {
 
     }
 
+    // Informe por pantalla la cantidad de libros que hay por cada Genero literario.
+    public Map<Genero, Integer> cuantosLibrosPorGeneroLiterario() {
+        Map<Genero, Integer> mapita = new HashMap<Genero, Integer>();
+
+        for (Libro libro : libros) {
+
+            Genero clave = libro.getGenero();
+            int valor;
+
+            if (mapita.containsKey(clave)) {
+                // actualizar
+                valor = mapita.get(clave) + 1;
+            } else {
+                // nueva entrada
+                valor = 1;
+            }
+            // Hacer put actualizado
+            mapita.put(clave, valor);
+
+        }
+
+        return mapita;
+
+    }
+
+    /** Devuelve un mapa con los libros que tengo de cada genero */
+    public Map<Genero, List<Libro>> librosPorGeneroLiterario() {
+        Map<Genero, List<Libro>> mapita = new HashMap<Genero, List<Libro>>();
+
+        for (Libro libro : libros) {
+
+            Genero genero = libro.getGenero();
+            List<Libro> listaDeLibros;
+
+            if (mapita.containsKey(genero)) {
+                listaDeLibros = mapita.get(genero);
+            } else {
+                listaDeLibros = new ArrayList<Libro>();
+            }
+            listaDeLibros.add(libro);
+            mapita.put(genero, listaDeLibros);
+        }
+
+        return mapita;
+    }
+
+    public String mostrarLibrosPorGeneroLiterario(Map<Genero, List<Libro>> m) {
+        String s = "";
+        List<Libro> lista;
+
+        for (Map.Entry<Genero, List<Libro>> cadaFila : m.entrySet()) {
+
+            Genero genero = cadaFila.getKey();
+            s += "\n" + genero + "\n";
+            lista = cadaFila.getValue();
+            for (Libro libro : lista) {
+                s += libro.toString() + "\n";
+            }
+        }
+
+        return s;
+    }
+
     public static void main(String[] args) {
 
         Biblioteca elNegrito = new Biblioteca();
@@ -101,8 +167,11 @@ public class Biblioteca {
         elNegrito.agregarLibro("Crónicas de una muerte anunciada", "Gabriel García Márquez", Genero.NOVELA, 120);
         elNegrito.agregarLibro("Harry Potter y la piedra filosofal", "J.K. Rowling", Genero.AVENTURA, 309);
         elNegrito.agregarLibro("El Principito", "Antoine de Saint-Exupéry", Genero.INFANTILES, 96);
+        elNegrito.agregarLibro("Dracula", "Bram Stocker", Genero.TERROR, 345);
 
         elNegrito.ordenarLibros();
         elNegrito.listarLibros();
+        System.out.println(elNegrito.cuantosLibrosPorGeneroLiterario());
+        System.out.println(elNegrito.mostrarLibrosPorGeneroLiterario(elNegrito.librosPorGeneroLiterario()));
     }
 }
