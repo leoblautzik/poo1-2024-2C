@@ -149,7 +149,6 @@ public class Biblioteca {
     }
 
     public static void main(String[] args) {
-
         Biblioteca elNegrito = new Biblioteca();
         elNegrito.agregarLibro("Moby-Dick", "Melville", Genero.AVENTURA, 823);
         elNegrito.agregarLibro("Crepusculo", "Mayer", Genero.NOVELA, 789);

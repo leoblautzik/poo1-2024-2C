@@ -94,9 +94,6 @@ elNegrito.agregar_libro(
     "Cien años de soledad", "Gabriel García Márquez", Genero.NOVELA, 400
 )
 elNegrito.agregar_libro(
-    "Cien años de soledad", "Gabriel García Márquez", "Libraco", 400
-)
-elNegrito.agregar_libro(
     "El ingenioso hidalgo Don Quijote de la Mancha",
     "Miguel de Cervantes",
     Genero.NOVELA,

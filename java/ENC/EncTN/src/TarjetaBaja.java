@@ -11,9 +11,9 @@ public class TarjetaBaja {
      * post: saldo de la Tarjeta en saldoInicial.
      */
     public TarjetaBaja(double saldoInicial) {
-        saldo = saldoInicial;
-        viajesEnColectivo = 0;
-        viajesEnSubte = 0;
+        this.saldo = saldoInicial;
+        this.viajesEnColectivo = 0;
+        this.viajesEnSubte = 0;
 
     }
 
