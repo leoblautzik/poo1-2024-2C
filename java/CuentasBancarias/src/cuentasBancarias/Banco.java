@@ -18,8 +18,8 @@ public class Banco {
         return new CajaAhorro(dni);
     }
 
-    public void agregarCuenta(Cuenta c) {
-        this.cuentas.add(c);
+    public void agregarCuenta(Cuenta unaCuenta) {
+        this.cuentas.add(unaCuenta);
     }
 
     public void listarCuentas() {

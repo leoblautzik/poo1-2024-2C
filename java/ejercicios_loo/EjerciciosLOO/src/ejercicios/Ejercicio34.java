@@ -38,6 +38,12 @@ public class Ejercicio34 {
         int[] resultado = mezcla(b, a);
         for (int r : resultado)
             System.out.print(r + " ");
+        int[] c = new int[5];
+        c[0] = 11;
+        c[1] = 12;
+        c[2] = 13;
+        c[3] = 14;
+        c[4] = 15;
 
     }
 }

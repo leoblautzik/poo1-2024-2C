@@ -11,13 +11,13 @@ class Unidad(metaclass=ABCMeta):
         self.__danio = danio
         self.__salud = salud
 
-    # @abstractmethod
-    # def atacar(self, oponente) -> None:
-    #     """self ataca al oponente"""
-
+    @abstractmethod
     def atacar(self, oponente) -> None:
-        if self.puede_atacar(oponente):
-            self.infligir_danio(oponente)
+        """self ataca al oponente"""
+
+    # def atacar(self, oponente) -> None:
+    #     if self.puede_atacar(oponente):
+    #         self.infligir_danio(oponente)
 
     @abstractmethod
     def puede_atacar(self, oponente) -> bool:
@@ -28,6 +28,9 @@ class Unidad(metaclass=ABCMeta):
         """devualve el danio"""
 
         return self.__danio
+
+    def set_danio(self, danio):
+        self.__danio = danio
 
     def get_salud(self) -> float:
         """Devuelve la salud"""
@@ -54,11 +57,12 @@ class Unidad(metaclass=ABCMeta):
 
     def infligir_danio(self, oponente) -> None:
         """El oponente recibe el danio inflingido por self"""
-        oponente.set_salud(oponente.get_salud() - self.get_danio())
+        # oponente.set_salud(oponente.get_salud() - self.get_danio())
+        oponente.sufrir_danio(self.get_danio())
 
-    def sufrir_danio(self, oponente) -> None:
+    def sufrir_danio(self, danio) -> None:
         """self recibe el danio inflingido por el oponente"""
-        self.set_salud(self.get_salud() - oponente.get_danio())
+        self.set_salud(self.get_salud() - danio)
 
     def desplazarse(self, nueva_posicion):
         """la unidad se desplaza a la nueva posicion"""

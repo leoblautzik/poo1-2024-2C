@@ -1,3 +1,5 @@
+"""Gestion eventos"""
+
 import os
 from espectadores_por_evento import EspectadoresPorEvento
 
@@ -11,11 +13,13 @@ class EspectadoresNulosException(Exception):
 
 
 class GestionEventos:
+    """class GestionEventos"""
 
     def __init__(self):
         self.__estadio = {}
 
     def cargar_eventos(self, archivo):
+        """carga el diccionario estadio con los datos del archivo"""
         with open(archivo, "r", encoding="utf-8") as ev:
             for linea in ev:
                 try:
@@ -38,6 +42,7 @@ class GestionEventos:
                     print("La cantidad de espectadores debe mayor a cero")
 
     def gener_epe(self, archivo):
+        """Escribe en el archivo los datos de cada evento"""
         with open(archivo, "w", encoding="utf-8") as fw:
             for cod_ev, epe in self.__estadio.items():
                 fw.write(cod_ev)
@@ -48,8 +53,8 @@ class GestionEventos:
 ge = GestionEventos()
 while True:
     try:
-        archivo = input("Ingrese el nombre del archivo de datos: ")
-        ge.cargar_eventos(archivo)
+        file = input("Ingrese el nombre del archivo de datos: ")
+        ge.cargar_eventos(file)
         break
     except FileNotFoundError:
         print("No se encuentra el archivo, intenete nuevamente...")

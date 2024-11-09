@@ -3,6 +3,7 @@
 import unittest
 from soldado import Soldado
 from lancero import Lancero
+from punial import Punial
 
 
 class Pruebas(unittest.TestCase):
@@ -79,6 +80,19 @@ class Pruebas(unittest.TestCase):
         s2 = Soldado(2)
         self.assertTrue(l1.puede_atacar(s2))
         self.assertTrue(s2.puede_atacar(l1))
+
+    def test_soldado_con_punial(self):
+        """ "Soldado con punial"""
+        s1 = Soldado(1)
+        s2 = Soldado(2)
+        s1 = Punial(s1)
+
+        self.assertTrue(s1.puede_atacar(s2))
+        self.assertTrue(s2.puede_atacar(s1))
+        s1.atacar(s2)
+        s2.atacar(s1)
+        self.assertEqual(187, s2.get_salud())
+        self.assertEqual(193, s1.get_salud())
 
 
 if __name__ == "__main__":

@@ -1,0 +1,23 @@
+Buenos Aires: 9
+Ciudad Autónoma de Buenos Aires: 6
+Catamarca: 1
+Chaco: 1
+Chubut: 1
+Córdoba: 3
+Corrientes: 3
+Entre Ríos: 3
+Formosa: 3
+Jujuy: 3
+La Pampa: 2
+La Rioja: 3
+Mendoza: 2
+Misiones: 2
+Neuquén: 2
+Río Negro: 2
+Salta: 2
+San Juan: 2
+San Luis: 1
+Santa Cruz: 1
+Santa Fe: 1
+Santiago del Estero: 2
+Tucumán: 1

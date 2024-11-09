@@ -1,0 +1,3 @@
+pila = []
+
+print(len(pila))

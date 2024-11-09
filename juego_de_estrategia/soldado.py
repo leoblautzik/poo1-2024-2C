@@ -2,6 +2,7 @@
 
 from unidad import Unidad
 from hidratable import Hidratable
+from punial import Punial
 
 
 class Soldado(Unidad, Hidratable):
@@ -16,15 +17,16 @@ class Soldado(Unidad, Hidratable):
         return self.__energia
 
     def atacar(self, oponente: Unidad):
-        super().atacar(oponente)
-        self.__energia -= 10
+        if self.puede_atacar(oponente):
+            oponente.sufrir_danio(self.get_danio())
+            self.__energia -= 10
 
     def puede_atacar(self, oponente: Unidad) -> bool:
         """Comentario"""
         return (
             not oponente.esta_muerto()
             and not self.esta_muerto()
-            and self != oponente
+            and not self is oponente
             and self.get_energia() >= 10
             and self.distancia(oponente) <= 1
         )
@@ -49,3 +51,10 @@ class Soldado(Unidad, Hidratable):
             + " y una salud de "
             + str(self.get_salud())
         )
+
+
+s1 = Soldado(1)
+print(s1.get_danio())
+s2 = Soldado(2)
+s1 = Punial(s1)
+print(s1.get_danio())
